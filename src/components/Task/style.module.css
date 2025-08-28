@@ -1,0 +1,92 @@
+.task {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--gray-500);
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.task p {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+p.through {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.complete-btn,
+.delete-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.completed {
+  color: var(--purple-dark);
+}
+
+.completed > rect + circle {
+  color: var(--purple-dark);
+  opacity: 1;
+}
+.completed > polyline {
+  color: var(--gray-100);
+}
+
+.completed:hover > :not(polyline) {
+  color: var(--purple);
+}
+
+.to-do > circle + circle {
+  color: var(--blue);
+}
+
+.to-do:hover {
+  color: var(--blue);
+}
+
+.delete-btn > svg {
+  color: var(--gray-300);
+}
+.delete-btn:hover > svg {
+  color: var(--danger);
+}
+
+
+.priorityBadge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.122em 0.7em;
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  color: white;
+  user-select: none;
+}
+
+.lowPriority {
+  background-color: #4caf50; /* green */
+}
+
+.mediumPriority {
+  background-color: #ff9800; /* orange */
+}
+
+.highPriority {
+  background-color: #f44336; /* red */
+}

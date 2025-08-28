@@ -162,6 +162,9 @@ function App() {
           />
         </main>
       </div>
+      <footer className={styles.footer}>
+        <a href="https://github.com/mechanicm56/todr">Github Repository</a>
+      </footer>
     </>
   )
 }
